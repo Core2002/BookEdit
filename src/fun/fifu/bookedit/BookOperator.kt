@@ -3,12 +3,12 @@ Copyright (c) 2021 NekokeCore
 EditBook is licensed under Mulan PSL v2.
 You can use this software according to the terms and conditions of the Mulan PSL v2.
 You may obtain a copy of Mulan PSL v2 at:
-         http://license.coscl.org.cn/MulanPSL2
+http://license.coscl.org.cn/MulanPSL2
 THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
 EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PSL v2 for more details.
-*/
+ */
 
 package `fun`.fifu.bookedit
 
@@ -53,9 +53,9 @@ object BookOperator {
         val bookMeta = Bukkit.getItemFactory().getItemMeta(type) as BookMeta
         bookMeta.pages = list
         val book = ItemStack(type)
-        if(type==Material.WRITTEN_BOOK){
-            bookMeta.title="Viewing for BookEdit"
-            bookMeta.author="BookEdit by NekokeCore"
+        if (type == Material.WRITTEN_BOOK) {
+            bookMeta.title = "Viewing for BookEdit"
+            bookMeta.author = "BookEdit by NekokeCore"
         }
         book.itemMeta = bookMeta
         return book

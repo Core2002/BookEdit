@@ -3,12 +3,12 @@ Copyright (c) 2021 NekokeCore
 EditBook is licensed under Mulan PSL v2.
 You can use this software according to the terms and conditions of the Mulan PSL v2.
 You may obtain a copy of Mulan PSL v2 at:
-         http://license.coscl.org.cn/MulanPSL2
+http://license.coscl.org.cn/MulanPSL2
 THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
 EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
 MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 See the Mulan PSL v2 for more details.
-*/
+ */
 
 package `fun`.fifu.bookedit
 
@@ -144,7 +144,7 @@ class BookCommand : TabExecutor {
         val bookMeta = p0.inventory.itemInMainHand.itemMeta ?: {
             p0.sendMessage("你主手必须持有 书/书与笔")
         }
-        if (bookMeta is BookMeta){
+        if (bookMeta is BookMeta) {
             bookMeta.exportBook("plugins/BookEdit/${p3[1].filt()}@${p0.name}_${myDateTimeFormatter.format(LocalDateTime.now())}.txt")
             p0.sendMessage("成功导出书 ${p3[1].filt()}")
         }
@@ -155,7 +155,7 @@ class BookCommand : TabExecutor {
         val bookMeta = p0.inventory.itemInMainHand.itemMeta ?: {
             p0.sendMessage("你主手必须持有 书/书与笔")
         }
-        if (bookMeta is BookMeta){
+        if (bookMeta is BookMeta) {
             p0.inventory.addItem(bookMeta.copyBook())
             p0.sendMessage("成功复制书")
         }
