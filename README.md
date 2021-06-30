@@ -20,11 +20,11 @@
 
 | 命令 | 选项 | 功能 |
 | :-----| :---- | :---- |
-| /book | **help** [command] | 来查看帮助​
+| /book | **help** `[command]` | 来查看帮助​
 | /book | **copy-to-writable-book** | 把主手的 成书/书与笔 复制成 书与笔 然后返还给玩家​
-| /book | **export-book-to-file** <file> | 把主手的 成书/书与笔 导出书到文件​
-| /book | **import-book** <file> | 从文件导入 书与笔​
-| /book | **view-book** <file> [player] | 给玩家打开一本成书，若 player 未填写，则为命令发送者​
+| /book | **export-book-to-file** `<file>` | 把主手的 成书/书与笔 导出书到文件​
+| /book | **import-book** `<file>` | 从文件导入 书与笔​
+| /book | **view-book** `<file> [player]` | 给玩家打开一本成书，若 `player` 未填写，则为命令发送者​
 
 ---
 
